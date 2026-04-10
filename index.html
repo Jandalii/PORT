@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Wahab Jandali | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span class="loader-name">
+                    <span class="char">A</span>
+                    <span class="char">b</span>
+                    <span class="char">d</span>
+                    <span class="char">u</span>
+                    <span class="char">l</span>
+                </span>
+                <span class="loader-name second">
+                    <span class="char">W</span>
+                    <span class="char">a</span>
+                    <span class="char">h</span>
+                    <span class="char">a</span>
+                    <span class="char">b</span>
+                </span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="mailto:aj.jandali03@gmail.com">
+                <img src="images/logo.png" alt="AJ Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link cta">Let's talk!</a>
+        </div>
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abdulwahab-jandali-30199630a/" target="_blank">LinkedIn</a>
+                <a href="#">Twitter/X</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">
+                    <span>Good evening!</span>
+                </div>
+                <div class="hero-title">
+                    <div class="title-line">
+                        <span class="first-name">Abdul Wahab</span>
+                    </div>
+                    <div class="title-line">
+                        <span class="role">Software Engineer</span>
+                    </div>
+                    <div class="title-line">
+                        <span class="last-name">Jandali</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image scroll-reveal-image">
+                <div class="image-container">
+                    <div class="image-reveal-wrapper">
+                        <img src="images/hero-1.jpg" alt="Abdul Wahab Jandali" class="hero-img active" data-index="0">
+                        <img src="images/hero-2.jpg" alt="Abdul Wahab Jandali" class="hero-img" data-index="1">
+                    </div>
+                    <div class="image-progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="marquee-item">8 YEARS OF EXPERIENCE</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">JUNIOR DEVELOPER</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item"></span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">WEB DEVELOPMENT</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">BRAND DESIGN</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">CREATIVE SOLUTIONS</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">8</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">JUNIOR DEVELOPER</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item"></span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">WEB DEVELOPMENT</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">BRAND DESIGN</span>
+                <span class="asterisk">✦</span>
+                <span class="marquee-item">CREATIVE SOLUTIONS</span>
+                <span class="asterisk">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-blur orange"></div>
+        <div class="container">
+            <div class="services-grid stagger-children">
+                <div class="service-card scroll-animate">
+                    <div class="service-number">01</div>
+                    <h3>Web Development</h3>
+                    <p>Building modern, responsive websites and web applications with cutting-edge technologies.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-number">02</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive user interfaces and seamless user experiences that engage and convert.</p>
+                </div>
+            
+                <div class="service-card scroll-animate">
+                    <div class="service-number">03</div>
+                    <h3>AI-Integration</h3>
+                    <p>Implementing technologies like voice recognition, facial recognition, and automation into systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2>Featured Projects</h2>
+                <a href="#" class="view-all">All projects →</a>
+            </div>
+            <div class="projects-slider scroll-animate-scale">
+                <div class="project-counter">
+                    <span class="current">01</span>
+                    <span class="separator">/</span>
+                    <span class="total">02</span>
+                </div>
+                <div class="projects-wrapper">
+                    <div class="project-card active" data-index="1">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>SELF ORDER SYSTEM</h3>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <span class="label">Year</span>
+                                    <span class="value">2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="label">Role</span>
+                                    <span class="value">Front End Developer</span>
+                                </div>
+                            </div>
+                            <p class="project-desc">As part of System Sense Corp.Jp during my internship, I developed a Self-Ordering System, a web-based solution for a Japanese restaurant. The application digitizes the ordering process, allowing real-time order handling and improving workflow efficiency. It was designed with scalability and user experience in mind to support modern restaurant operations.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-index="2">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>AI-Driven Kiosk for School Registrar</h3>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <span class="label">Year</span>
+                                    <span class="value">2026</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="label">Role</span>
+                                    <span class="value">Full Stack Developer</span>
+                                </div>
+                            </div>
+                            <p class="project-desc">AI-Driven Registrar Kiosk is a self-service system that allows students to request, pay for, and print school documents instantly. It uses voice recognition for touch-free interaction and facial recognition for secure student login. The kiosk helps reduce waiting time, improve convenience, and make registrar services more efficient.</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="project-nav">
+                    <button class="nav-btn prev" id="prevProject">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <button class="nav-btn next" id="nextProject">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text scroll-animate-left">
+                    <h4>Anything in mind?</h4>
+                    <h2>Let's work together</h2>
+                    <p>I design and build software that delivers real impact. With a strong foundation in development, I’m now diving into cloud engineering—learning how to scale, deploy, and optimize applications for modern, real-world environments.</p>
+                </div>
+                <div class="about-image scroll-reveal-image scroll-animate-right">
+                    <div class="image-reveal-wrapper">
+                        <img src="images/hero-2.jpg" alt="Abdul Wahab Jandali">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category scroll-animate">
+                    <div class="category-header">
+                        <h3>Frontend</h3>
+                        <span class="category-number">01</span>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript / TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML & CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <span span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-animate">
+                    <div class="category-header">
+                        <h3>Backend</h3>
+                        <span class="category-number">02</span>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database (SQL/NoSQL)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-animate">
+                    <div class="category-header">
+                        <h3>Design</h3>
+                        <span class="category-number">03</span>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Canva</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-animate">
+                    <div class="category-header">
+                        <h3>Tools & Others</h3>
+                        <span class="category-number">04</span>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-group">
+                        <h5>Socials</h5>
+                        <a href="https://www.linkedin.com/in/abdulwahab-jandali-30199630a/" target="_blank">LinkedIn</a>
+                        <a href="#"></a>
+                        <a href="#"><a>
+                    </div>
+                    <div class="info-group">
+                        <h5>Contact me</h5>
+                        <a href="mailto:aj.jandali03@gmail.com">Email: Aj.jandali03@gmail.com</a>
+                        <a href="tel:+639989397213">Phone Number: +6399-893-97213</a>
+                        
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h4>Got a project in mind?</h4>
+                    <h2>Let's make something happen together</h2>
+                    <p>As a developer and creative, I believe in crafting digital experiences that matter.</p>
+                </div>
+            </div>
+            <div class="contact-email">
+                <a href="mailto:aj.jandali03@gmail.com" class="email-marquee">
+                    <span>aj.jandali03@gmail.com</span><span>aj.jandali03@gmail.com</span>
+                    <span>aj.jandali03@gmail.com</span><span>aj.jandali03@gmail.com</span>
+                </a>
+            </div>
+        </div>
+        <div class="contact-gradient"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span>© 2024 Abdul Wahab Jandali. All rights reserved.</span>
+                <span>Crafted with ❤️</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
