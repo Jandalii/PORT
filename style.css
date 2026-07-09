@@ -32,7 +32,6 @@ html {
 body {
     font-family: var(--font-primary);
     background: #ffffff;
-    background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -60,6 +59,19 @@ img {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -487,6 +499,35 @@ img {
     margin-bottom: 2rem;
 }
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.4rem;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid var(--text-primary);
+    transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    background: transparent;
+    color: var(--text-primary);
+}
+
 .title-line {
     overflow: hidden;
     margin-bottom: 0.5rem;
@@ -834,21 +875,25 @@ img {
     gap: 4rem;
     align-items: center;
     opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    transform: translateX(24px);
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease;
     pointer-events: none;
 }
 
 .project-card.active {
     opacity: 1;
+    visibility: visible;
     transform: translateX(0);
     pointer-events: auto;
-    position: relative;
+    z-index: 2;
 }
 
 .project-card.leaving {
     opacity: 0;
-    transform: translateX(-100px);
+    visibility: hidden;
+    transform: translateX(-24px);
+    z-index: 1;
 }
 
 .project-image {
@@ -1190,14 +1235,13 @@ img {
 /* Fade Up with Scale */
 .scroll-animate-scale {
     opacity: 0;
-    transform: translateY(40px) scale(0.95);
-    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: none;
+    transition: opacity 0.45s ease;
 }
 
 .scroll-animate-scale.animate-in {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: none;
 }
 
 /* Fade Left */
@@ -1289,17 +1333,9 @@ img {
     transition: transform 0.1s linear;
 }
 
-/* Smooth page transitions between sections */
+/* Keep section transitions lightweight and avoid the visible jump while scrolling */
 section {
     position: relative;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-section.section-visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Hero always visible */
